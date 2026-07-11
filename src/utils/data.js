@@ -8,7 +8,7 @@ export const sections = [
 
 import wizzimage from '../assets/Wizzimage.png';
 import bingevibeimage from '../assets/Bingevibeimage.png';
-import pdftoolimage from '../assets/pdftoolimage.png';
+import pdftoolimage from '../assets/Pdftoolimage.png';
 import cssimageeditor from '../assets/cssimageeditor.png';
 
 export const projects = [
