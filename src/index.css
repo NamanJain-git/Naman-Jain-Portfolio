@@ -27,6 +27,19 @@ body {
   font-smoothing: antialiased;
 }
 
+/* prevent horizontal overflow globally */
+html, body, #root {
+  overflow-x: hidden;
+}
+
+/* prefer reduced motion and disable heavy animations on small screens */
+@media (max-width: 420px) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 #root {
   width: 100%;
 }

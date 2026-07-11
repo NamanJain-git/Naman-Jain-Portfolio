@@ -21,7 +21,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full py-24 px-6 md:px-12 lg:px-20 xl:px-24">
+    <section id="contact" className="w-full py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-24">
       <div className="w-full text-center">
         <h2 className="text-5xl font-bold text-white sm:text-6xl">Get In Touch</h2>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-400">
@@ -29,16 +29,16 @@ function Contact() {
         </p>
       </div>
 
-      <div className="mt-14 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-        <motion.form ref={formRef} onSubmit={handleSubmit} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="rounded-[28px] border border-white/10 bg-slate-950/80 p-10 shadow-soft">
+      <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-[1.4fr_1fr]">
+        <motion.form ref={formRef} onSubmit={handleSubmit} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="rounded-[20px] border border-white/10 bg-slate-950/80 p-6 md:p-10 shadow-soft">
           <div className="space-y-6">
             <label className="block text-sm font-medium text-slate-300">Name</label>
-            <input name="user_name" required className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-5 py-4 text-slate-100 outline-none transition focus:border-cyan-400/40 focus:ring-4 focus:ring-cyan-400/10" placeholder="Your name" />
+            <input name="user_name" required className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400/40 focus:ring-4 focus:ring-cyan-400/10" placeholder="Your name" />
             <label className="block text-sm font-medium text-slate-300">Email</label>
-            <input type="email" name="user_email" required className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-5 py-4 text-slate-100 outline-none transition focus:border-violet-400/40 focus:ring-4 focus:ring-violet-400/10" placeholder="your.email@example.com" />
+            <input type="email" name="user_email" required className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-4 py-3 text-slate-100 outline-none transition focus:border-violet-400/40 focus:ring-4 focus:ring-violet-400/10" placeholder="your.email@example.com" />
             <label className="block text-sm font-medium text-slate-300">Message</label>
-            <textarea name="message" required rows="6" className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-5 py-4 text-slate-100 outline-none transition focus:border-sky-400/40 focus:ring-4 focus:ring-sky-400/10" placeholder="Tell me about your project..."></textarea>
-            <button type="submit" className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-8 py-4 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:shadow-glow">
+            <textarea name="message" required rows="6" className="w-full rounded-3xl border border-white/10 bg-slate-900/90 px-4 py-3 text-slate-100 outline-none transition focus:border-sky-400/40 focus:ring-4 focus:ring-sky-400/10" placeholder="Tell me about your project..."></textarea>
+            <button type="submit" className="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-3 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:shadow-glow">
               Send Message
             </button>
             {status && <p className="mt-3 text-sm text-slate-300">{status}</p>}

@@ -3,7 +3,7 @@ import { projects } from '../utils/data';
 
 function Projects() {
   return (
-    <section id="projects" className="w-full py-24 px-6 md:px-12 lg:px-20 xl:px-24">
+    <section id="projects" className="w-full py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-24">
       <div className="w-full text-center">
         <h2 className="text-5xl font-bold text-white sm:text-6xl">Featured Projects</h2>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-400">
@@ -11,11 +11,11 @@ function Projects() {
         </p>
       </div>
 
-      <div className="mt-14 grid w-full gap-8 lg:grid-cols-2">
+      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         {projects.map((project, index) => (
-          <motion.article key={project.title} whileHover={{ y: -8 }} className="group w-full overflow-hidden rounded-[28px] border border-white/10 bg-slate-950/80 shadow-soft">
+          <motion.article key={project.title} whileHover={{ y: -8 }} className="group w-full overflow-hidden rounded-[20px] border border-white/10 bg-slate-950/80 shadow-soft">
             <div className="relative overflow-hidden">
-              <img src={project.image} alt={project.title} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
+              <img src={project.image} alt={project.title} className="h-56 sm:h-72 md:h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
             </div>
             <div className="space-y-5 p-8">
               <div>
@@ -29,7 +29,7 @@ function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-white/10 bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:scale-105">
                   Live Demo
                 </a>

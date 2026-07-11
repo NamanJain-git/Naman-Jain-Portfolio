@@ -16,7 +16,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section id="skills" className="w-full py-24 px-6 md:px-12 lg:px-20 xl:px-24">
+    <section id="skills" className="w-full py-20 md:py-24 lg:py-32 px-6 md:px-12 lg:px-20 xl:px-24">
       <div className="w-full text-center">
         <h2 className="text-5xl font-bold text-white sm:text-6xl">My Skills</h2>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-400">
@@ -24,11 +24,11 @@ function Skills() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
         {skills.map((skill, index) => {
           const Icon = skill.icon;
           return (
-            <motion.article key={skill.title} whileHover={{ y: -10, scale: 1.02 }} transition={{ duration: 0.35 }} className="group rounded-[24px] border border-white/10 bg-slate-950/70 p-8 shadow-soft">
+            <motion.article key={skill.title} whileHover={{ y: -10, scale: 1.02 }} transition={{ duration: 0.35 }} className="group rounded-[20px] border border-white/10 bg-slate-950/70 p-6 md:p-8 shadow-soft">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-3xl bg-slate-900/90 text-white shadow-glow">
                 <div className={`rounded-2xl bg-gradient-to-br ${skill.accent} p-3 text-3xl text-white transition duration-500 group-hover:rotate-6`}>
                   <Icon />

@@ -26,20 +26,20 @@ function Navbar({ activeSection }) {
       variants={navVariants}
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${scrolled ? 'backdrop-blur-xl bg-slate-950/70 border-b border-white/10 shadow-2xl shadow-slate-950/30' : 'bg-transparent'} `}
     >
-      <div className="flex w-full items-center justify-between px-6 py-5 md:px-12 lg:px-20 xl:px-24">
-        <a href="#home" className="text-3xl font-bold tracking-[-0.04em] text-transparent bg-gradient-to-r from-violet-500 via-fuchsia-400 to-sky-400 bg-clip-text">
+      <div className="flex w-full items-center justify-between px-6 py-4 md:px-12 lg:px-20 xl:px-24">
+        <a href="#home" className="text-3xl md:text-3xl font-bold tracking-[-0.04em] text-transparent bg-gradient-to-r from-violet-500 via-fuchsia-400 to-sky-400 bg-clip-text whitespace-nowrap">
           NJ
         </a>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-8 md:flex">
           {sections.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`group text-base font-semibold transition ${activeSection === item.id ? 'text-white' : 'text-slate-300'} hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-violet-400 hover:to-cyan-400`}
+              className={`group text-base font-semibold transition whitespace-nowrap ${activeSection === item.id ? 'text-white' : 'text-slate-300'} hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-violet-400 hover:to-cyan-400`}
             >
               <span>{item.label}</span>
-              <span className="block h-[2px] w-0 bg-gradient-to-r from-violet-400 to-cyan-400 transition-all duration-300 group-hover:w-full ${activeSection === item.id ? 'w-full' : ''}" />
+              <span className={`block h-[2px] bg-gradient-to-r from-violet-400 to-cyan-400 transition-all duration-300 ${activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </a>
           ))}
         </nav>
