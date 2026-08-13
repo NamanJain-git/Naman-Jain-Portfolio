@@ -9,7 +9,7 @@ export const sections = [
 import wizzimage from '../assets/Wizzimage.png';
 import bingevibeimage from '../assets/Bingevibeimage.png';
 import pdftoolimage from '../assets/Pdftoolimage.png';
-import cssimageeditor from '../assets/cssimageeditor.png';
+import netflixclone from '../assets/Netflixclone.png';
 
 export const projects = [
     {
@@ -37,11 +37,11 @@ export const projects = [
         code: '#',
     },
     {
-        title: 'CSS Variable Image Editor',
-        description: 'Update CSS variables in an image with help of js',
-        tags: ['HTML', 'CSS', 'JavaScript'],
-        image: cssimageeditor,
-        demo: 'https://css-image-editor.netlify.app',
-        code: 'https://github.com/NamanJain-git/CSS-Variable-Image-Editor',
+        title: 'Netflix Inspired UI Clone',
+        description: 'Took the inspiration from Netflix and added multiple own features',
+        tags: ['HTML', 'CSS', 'JavaScript, Flickity slider'],
+        image: netflixclone,
+        demo: 'https://ui-clone-by-naman.netlify.app',
+        code: 'https://github.com/NamanJain-git/Netflix-UI-Clone',
     },
 ];
