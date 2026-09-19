@@ -52,7 +52,7 @@ function Hero() {
                             <img
                                 src={portfolio}
                                 alt="Naman Jain"
-                                className="h-full w-full object-cover object-center object-[50%_0%] scale-150"
+                                className="h-full w-full object-cover object-center"
                             />
                             <div className="absolute inset-x-0 bottom-8 mx-auto h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-violet-500/30 blur-2xl" />
                         </div>
