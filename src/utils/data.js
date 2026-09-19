@@ -9,9 +9,17 @@ export const sections = [
 import wizzimage from '../assets/Wizzimage.png';
 import bingevibeimage from '../assets/Bingevibeimage.png';
 import pdftoolimage from '../assets/Pdftoolimage.png';
-import netflixclone from '../assets/Netflixclone.png';
+import LLDplatform from '../assets/LLDplatform.png';
 
 export const projects = [
+    {
+        title: 'LLD Practice Platform',
+        description: 'A full-stack practice platform that helps learners practice Low-Level Design (LLD) problems and receive structured, explainable feedback on their solutions.',
+        tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Gemini API', 'CSS'],
+        image: LLDplatform,
+        demo: 'https://lld-practice-platform-project.netlify.app',
+        code: 'https://github.com/NamanJain-git/LLD-practice-platform',
+    },
     {
         title: 'Wizz E-commerce Website',
         description: 'A modern shopping experience built with React, Bootstrap, and Tailwind CSS.',
@@ -36,12 +44,5 @@ export const projects = [
         demo: 'https://quick-pdf-13.preview.emergentagent.com/?utm_source=share',
         code: '#',
     },
-    {
-        title: 'Netflix Inspired UI Clone',
-        description: 'Took the inspiration from Netflix and added multiple own features',
-        tags: ['HTML', 'CSS', 'JavaScript, Flickity slider'],
-        image: netflixclone,
-        demo: 'https://ui-clone-by-naman.netlify.app',
-        code: 'https://github.com/NamanJain-git/Netflix-UI-Clone',
-    },
+    
 ];

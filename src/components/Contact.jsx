@@ -48,31 +48,31 @@ function Contact() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.12 }} className="rounded-[28px] border border-white/10 bg-slate-950/80 p-10 shadow-soft">
           <h3 className="mb-8 text-3xl font-semibold text-white">Connect With Me</h3>
           <div className="space-y-4">
-            <a href="https://github.com/NamanJain-git" target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-violet-400/30 hover:bg-slate-900/90 hover:shadow-glow">
-              <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-violet-500/10 text-violet-300">
+            <a href="https://github.com/NamanJain-git" target="_blank" rel="noreferrer" className="flex min-w-0 items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-violet-400/30 hover:bg-slate-900/90 hover:shadow-glow">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-3xl bg-violet-500/10 text-violet-300">
                 <FaGithub className="h-5 w-5" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-base font-semibold text-white">GitHub</p>
                 <p className="text-sm text-slate-400">View my repositories</p>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/namanjain25" target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-slate-900/90 hover:shadow-glow">
-              <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-400/10 text-sky-300">
+            <a href="https://www.linkedin.com/in/namanjain25" target="_blank" rel="noreferrer" className="flex min-w-0 items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-slate-900/90 hover:shadow-glow">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-3xl bg-sky-400/10 text-sky-300">
                 <FaLinkedin className="h-5 w-5" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-base font-semibold text-white">LinkedIn</p>
                 <p className="text-sm text-slate-400">Let's connect professionally</p>
               </div>
             </a>
-            <a href="mailto:socialjainnaman@gmail.com" className="flex items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-violet-400/30 hover:bg-slate-900/90 hover:shadow-glow">
-              <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-fuchsia-500/10 text-fuchsia-300">
+            <a href="mailto:socialjainnaman@gmail.com" className="flex min-w-0 items-center gap-4 rounded-3xl border border-white/10 bg-slate-900/80 p-5 transition hover:-translate-y-1 hover:border-violet-400/30 hover:bg-slate-900/90 hover:shadow-glow">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-3xl bg-fuchsia-500/10 text-fuchsia-300">
                 <FaEnvelope className="h-5 w-5" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-base font-semibold text-white">Email</p>
-                <p className="text-sm text-slate-400">socialjainnaman@gmail.com</p>
+                <p className="break-all text-sm text-slate-400">socialjainnaman@gmail.com</p>
               </div>
             </a>
           </div>
