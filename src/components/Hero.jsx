@@ -22,7 +22,7 @@ function Hero() {
                         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.95] text-transparent bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text">
                             Naman Jain
                         </h1>
-                        <p className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white">Frontend Web Developer</p>
+                        <p className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white">Frontend Developer</p>
                     </div>
                     <p className="mx-auto lg:mx-0 max-w-2xl text-base sm:text-lg leading-7 sm:leading-8 text-slate-400">
                         I craft visually engaging and high-performance web experiences that blend creativity with functionality.
